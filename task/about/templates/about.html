@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block content %}
+    <br>
+    <h1 class="text-center">О нас</h1>
+    <br>
+    <br>
+    {% for text in about %}
+        <p class="text-center">{{ text }}</p>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Contacts
+{% endblock %}
+
+{% block content %}
+    <br>
+    <h1 class="text-center">Список Контактов</h1>
+    <br>
+    <br>
+    {% for contact in contacts %}
+        <p class="text-center">{{ contact }}</p>
+    {% endfor %}
+
+{% endblock %}
